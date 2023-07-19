@@ -3,7 +3,7 @@ n, k = map(int, input().split())
 how_long = []
 how_many = []
 all = []
-range_total_medicine = 100000000000000000000000
+sum = 0
 
 
 for _ in range(n):
@@ -17,20 +17,16 @@ for i in range(n):
 
 all.sort()
 
-all_copy = all
+for i in reversed(range(n)):
+    sum += all[i][1]
+    if sum > k:
+        day = all[i][0]
+        # why not all[i][0] + 1?
+        print(day + 1)
 
-all_range = all.index(all[n // 2])
+        exit()
 
-while range_total_medicine > k:
-    range_total_medicine = 0
-    for i in range(all_range):
-        range_total_medicine += i[1]
-
-    if range_total_medicine > k:
-        all_range
-
-
-print(all)
+print(1)
 
 
 # N, K= map(int, input().split())

@@ -1,7 +1,9 @@
-a, b = map(int, input().split())
+# list = [1, 2, 3, 4, 5]
+# for i in range(len(list)):
+#     print(list[-i - 1])
 
-if a == b - 1 and a % 3 != 0:
-    print("yes")
+# for i in reversed(range(len(list))):
+#     print(list[i])
 
-else:
-    print("no")
+while True:
+    print("Hello")
