@@ -1,9 +1,14 @@
-# list = [1, 2, 3, 4, 5]
-# for i in range(len(list)):
-#     print(list[-i - 1])
+S = input()
 
-# for i in reversed(range(len(list))):
-#     print(list[i])
-
-while True:
-    print("Hello")
+if (
+    S == "ACE"
+    or S == "BDF"
+    or S == "CEG"
+    or S == "DFA"
+    or S == "EGB"
+    or S == "FAC"
+    or S == "GBD"
+):
+    print("Yes")
+else:
+    print("No")
